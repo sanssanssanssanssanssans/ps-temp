@@ -33,4 +33,8 @@ impl Queue {
     fn back(&mut self) -> i32 {
         return self.data[self.tail - 1];
     }
+
+    fn size(&mut self) -> usize {
+        return self.tail - self.head;
+    }
 }
